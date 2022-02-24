@@ -1,0 +1,15 @@
+<div>
+  <h1>Prime Number Ranges</h1>
+  <table>
+    <tr>
+      <th>Range</th>
+      <th>Count</th>
+      <th>Time Taken (ms)</th>
+    </tr>
+    <tr *ngFor="let prime of primes">
+      <td>0 - {{ prime.primeTill }}</td>
+      <td>{{ prime.primeCount }}</td>
+      <td>{{ prime.timeTaken }}</td>
+    </tr>
+  </table>
+</div>

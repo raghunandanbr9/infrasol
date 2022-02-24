@@ -1,0 +1,14 @@
+<header>
+  <div class="title">{{ title | uppercase}}</div>
+</header>
+<nav>
+  <ul>
+    <li><a [routerLink]="['/']">Home</a></li>
+    <li><a [routerLink]="['prime']">Prime Numbers </a></li>
+    <li><a [routerLink]="['ip']">IP Address</a></li>
+  </ul>
+</nav>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>&copy; {{ title }}  2020</footer>
